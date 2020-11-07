@@ -141,14 +141,14 @@ Persons rest microservice api can be found at [this link](https://app.swaggerhub
 ## Results
 
 ### Udaconnect App (Front END)
-<img src="https://live.staticflickr.com/65535/50575360433_56612275f2_c.jpg" width="400">
+<img src="https://live.staticflickr.com/65535/50575360433_56612275f2_c.jpg" width="600">
 
 ### Persons microservice API
 
-<img src="https://live.staticflickr.com/65535/50576091591_4fd2983463_c.jpg" width="400">
+<img src="https://live.staticflickr.com/65535/50576091591_4fd2983463_c.jpg" width="600">
 
 ### Connection microservice API
 
-<img src="https://live.staticflickr.com/65535/50576230377_12c90b9cfc_c.jpg" width="400">
+<img src="https://live.staticflickr.com/65535/50576230377_12c90b9cfc_c.jpg" width="600">
 
 
