@@ -132,7 +132,8 @@ To manually connect to the database, you will need software compatible with Post
 
 ## Architecture Diagrams
 This [Lucidchart](https://www.lucidchart.com/pages/) diagram shows services and relation between them
-<img src="https://live.staticflickr.com/65535/50566541207_c647f8e3d3_c.jpg" width="200">
+![alt text](https://raw.githubusercontent.com/pascalito007/nd064-c2-message-passing-projects-starter/master/docs/architecture_design.png)
+
 
 
 ## Swagger documentation
