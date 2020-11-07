@@ -138,4 +138,17 @@ This [Lucidchart](https://www.lucidchart.com/pages/) diagram shows services and 
 ## Swagger documentation
 Persons rest microservice api can be found at [this link](https://app.swaggerhub.com/apis/pascalito007/persons/1.0.0)
 
+## Results
+
+### Udaconnect App (Front END)
+<img src="https://live.staticflickr.com/65535/50575360433_56612275f2_c.jpg" width="400">
+
+### Persons microservice API
+
+<img src="https://live.staticflickr.com/65535/50576091591_4fd2983463_c.jpg" width="400">
+
+### Connection microservice API
+
+<img src="https://live.staticflickr.com/65535/50576230377_12c90b9cfc_c.jpg" width="400">
+
 
