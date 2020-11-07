@@ -1,0 +1,49 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    service: kafka-app
+  name: kafka-app
+spec:
+  ports:
+  - name: "9092"
+    port: 9092
+    targetPort: 9092
+  - name: "2181"
+    port: 2181
+    targetPort: 2181
+  selector:
+    service: kafka-app
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    service: kafka-app
+  name: kafka-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      service: kafka-app
+  template:
+    metadata:
+      labels:
+        service: kafka-app
+    spec:
+      containers:
+      - image: 'docker.io/bitnami/zookeeper:3-debian-10'
+        name: zookeeper
+        imagePullPolicy: Always
+        env:
+        - name: ALLOW_ANONYMOUS_LOGIN
+          value: "yes"
+      - image: 'docker.io/bitnami/kafka:2-debian-10'
+        name: kafka
+        imagePullPolicy: Always
+        env:
+        - name: KAFKA_CFG_ZOOKEEPER_CONNECT
+          value: "kafka-app:2181"
+        - name: ALLOW_PLAINTEXT_LISTENER
+          value: "yes"
+      restartPolicy: Always

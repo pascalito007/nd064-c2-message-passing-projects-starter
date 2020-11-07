@@ -31,7 +31,7 @@ spec:
         service: udaconnect-app
     spec:
       containers:
-      - image: isjustintime/udaconnect-app:latest
+      - image: pasciano007/front:latest
         name: udaconnect-app
         imagePullPolicy: Always
         resources:

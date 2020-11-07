@@ -1,0 +1,19 @@
+**********************************************************************************
+Message passing strategy decision justification
+***********************************************************************************
+
+REST (REpresentational State Transfer) technique
+
+RESTful APIs are the most common form of message passing today.
+It can be implemented in many ways and the industry has settled on the best practices on how to implement REST APIs
+
+gRPC (g* Remote Procedure Calls) technique
+
+gRPC is programming language agnostic. Compared to REST, gRPC provides greater performance at the expense of less flexibility.
+gRPC does not require an HTTP library to make an API request.
+
+Message Queues (e.g Kafka) technique:
+
+Message Queues has been chosen because it address three main issues: performance, reliability and decoupling.
+Queues provide asynchronous request, help to have a system to be always available to clients even if other parts of the service may not be functioning
+and finally parts of the system can be modified without affecting others.

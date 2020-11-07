@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "59f4d9e3-e75f-4159-9614-ce7306ce9a2a",
+		"name": "udaconnect",
+		"description": "This is postman collection for udaconnect udacity project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "persons",
+			"item": [
+				{
+					"name": "GET Persons",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:30002/api/persons",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "30002",
+							"path": [
+								"api",
+								"persons"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create new person",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 14,\n    \"first_name\": \"John\",\n    \"last_name\": \"Doe\",\n    \"company_name\": \"Mc Donald\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:30002/api/persons",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "30002",
+							"path": [
+								"api",
+								"persons"
+							]
+						},
+						"description": "http://localhost:30002/api/persons\nbody:\n{\n    \"id\": 1,\n    \"first_name\": \"John\"\n    \"last_name\": \"Doe\"\n    \"company_name\": \"Mc Donald\"\n}"
+					},
+					"response": []
+				},
+				{
+					"name": "Get single person by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:30002/api/persons/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "30002",
+							"path": [
+								"api",
+								"persons",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "These are endpoints for persons api microservice",
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "connection",
+			"item": [
+				{
+					"name": "Get connections",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:30003/api/persons/5/connection?start_date=2020-01-01&end_date=2020-12-30&distance=5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "30003",
+							"path": [
+								"api",
+								"persons",
+								"5",
+								"connection"
+							],
+							"query": [
+								{
+									"key": "start_date",
+									"value": "2020-01-01"
+								},
+								{
+									"key": "end_date",
+									"value": "2020-12-30"
+								},
+								{
+									"key": "distance",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
